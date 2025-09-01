@@ -39,10 +39,16 @@
     .service p{margin:0;color:var(--muted);font-size:13px}
     footer{margin-top:22px;color:var(--muted);font-size:13px;text-align:center}
     /* Hero image responsiveness */
-    .hero img {max-width:100%;height:auto}
+    .hero img {
+      width:360px;       /* desktop default */
+      max-width:100%;    /* prevents overflow on small screens */
+      height:auto;
+      border-radius:12px;
+      object-fit:cover;
+    }
     @media (max-width:768px){
       .hero{flex-direction:column;text-align:center}
-      .hero img{margin-top:16px;max-width:90%}
+      .hero img{width:90%;margin-top:16px}
     }
   </style>
 </head>
@@ -65,7 +71,7 @@
           <p>We provide premium moving, packing and cleaning across Addis Ababa. Fast, careful and professional.</p>
           <button class="btn btn-primary" onclick="location.href='#contact'">Contact Us</button>
         </div>
-        <img src="shger.jpg" alt="Sheger Movers truck" style="border-radius:12px;object-fit:cover">
+        <img src="shger.jpg" alt="Sheger Movers truck">
       </section>
       <section id="services">
         <h2>Our Services</h2>
