@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Sheger Movers — Premium Moving, Packing & Cleaning</title>
+  <meta name="description" content="Sheger Movers — premium moving, packing and cleaning in Addis Ababa. Quick & reliable." />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Playfair+Display:wght@500;700&display=swap" rel="stylesheet">
+  <style>
+    :root{--bg:#fbfaf8;--panel:#fff;--accent:#b78b3f;--muted:#6b7280;--text:#071226;--shadow:0 18px 40px rgba(11,20,33,0.06);--radius:14px}
+    *{box-sizing:border-box}html,body{height:100%}body{margin:0;font-family:Inter,system-ui,Arial;background:var(--bg);color:var(--text);-webkit-font-smoothing:antialiased;overflow-x:hidden}
+    .bg-layer{position:fixed;inset:0;z-index:0;pointer-events:none;overflow:hidden}
+    .bg-glow{position:absolute;width:900px;height:600px;left:-10%;top:-10%;background:radial-gradient(circle at 30% 30%, rgba(183,139,63,0.09), transparent 25%);filter:blur(60px)}
+    .bg-wave{position:absolute;width:1200px;height:500px;right:-20%;bottom:-20%;background:radial-gradient(circle at 70% 70%, rgba(7,18,36,0.03), transparent 22%);filter:blur(80px)}
+    .wrap{max-width:1100px;margin:20px auto;padding:14px;position:relative;z-index:10}
+    .topbar{display:flex;align-items:center;gap:12px;padding:8px 12px;background:var(--panel);border-radius:12px;box-shadow:var(--shadow);position:sticky;top:8px;z-index:40}
+    .logo{width:52px;height:52px;border-radius:10px;object-fit:cover;border:2px solid rgba(183,139,63,0.08)}
+    .brand{display:flex;flex-direction:column;margin-left:6px}
+    .brand h1{font-family:'Playfair Display',serif;margin:0;font-size:16px;line-height:1}
+    .brand p{margin:2px 0 0;color:var(--muted);font-size:12px}
+    .contact{margin-left:auto;text-align:right;display:flex;flex-direction:column;align-items:flex-end;gap:4px;min-width:150px}
+    .contact .label{font-weight:800;font-size:12px}
+    .contact .phones{display:flex;gap:12px;align-items:center;justify-content:flex-end}
+    .contact .phones a{font-weight:700;color:var(--text);text-decoration:none;font-size:14px;padding:4px 6px;border-radius:6px}
+    .contact .phones a:not(:last-child)::after{content:'|';color:var(--muted);font-weight:600;margin-left:8px}
+    .contact .email{font-size:12px;color:var(--muted)}
+    .hero{display:flex;gap:22px;align-items:center;margin-top:14px;padding:24px;border-radius:16px;background:linear-gradient(180deg,var(--panel),#fff);box-shadow:var(--shadow)}
+    .hero-left{flex:1;min-width:0}
+    .hero h2{font-family:'Playfair Display',serif;margin:12px 0;font-size:26px}
+    .hero p{margin:0;color:var(--muted);font-size:14px}
+    .btn{padding:10px 14px;border-radius:10px;font-weight:700;border:0;cursor:pointer}
+    .btn-primary{background:var(--accent);color:#fff}
+    .services{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:18px;margin-top:24px}
+    .service{background:var(--panel);padding:18px;border-radius:12px;box-shadow:0 12px 36px rgba(11,20,33,0.06);text-align:left}
+    .service h3{margin:6px 0 8px;font-size:16px}
+    .service p{margin:0;color:var(--muted);font-size:13px}
+    footer{margin-top:22px;color:var(--muted);font-size:13px;text-align:center}
+  </style>
+</head>
+<body>
+  <div class="bg-layer"><div class="bg-glow"></div><div class="bg-wave"></div></div>
+  <div class="wrap">
+    <div class="topbar">
+      <img src="shger.jpg" alt="Sheger Movers logo" class="logo">
+      <div class="brand"><h1>Sheger Movers</h1><p>Quick & Reliable — Moving, Packing & Cleaning</p></div>
+      <div class="contact">
+        <div class="label">Call / WhatsApp</div>
+        <div class="phones"><a href="tel:+251924270404">+251 924 270 404</a><a href="tel:+251976122000">+251 976 122 000</a></div>
+        <div class="email"><a href="mailto:shegermovers@gmail.com">shegermovers@gmail.com</a></div>
+      </div>
+    </div>
+    <main>
+      <section class="hero">
+        <div class="hero-left">
+          <h2>Moving perfected — with care & style</h2>
+          <p>We provide premium moving, packing and cleaning across Addis Ababa. Fast, careful and professional.</p>
+          <button class="btn btn-primary" onclick="location.href='#contact'">Contact Us</button>
+        </div>
+        <img src="shger.jpg" alt="Sheger Movers truck" style="width:360px;border-radius:12px;object-fit:cover">
+      </section>
+      <section id="services">
+        <h2>Our Services</h2>
+        <div class="services">
+          <div class="service"><h3>Residential Moving</h3><p>Careful handling and expert packing for homes of all sizes.</p></div>
+          <div class="service"><h3>Commercial Moving</h3><p>Planned relocations that keep your business moving.</p></div>
+          <div class="service"><h3>Packing</h3><p>Premium materials and neat labelling for easy unpacking.</p></div>
+          <div class="service"><h3>Cleaning</h3><p>Deep cleaning and move-out services to landlord standards.</p></div>
+        </div>
+      </section>
+      <section id="contact">
+        <h2>Contact</h2>
+        <p>📞 +251 924 270 404 | +251 976 122 000</p>
+        <p>📧 <a href="mailto:shegermovers@gmail.com">shegermovers@gmail.com</a></p>
+      </section>
+    </main>
+    <footer>© <span id="y"></span> Sheger Movers. Serving Addis Ababa</footer>
+  </div>
+  <script>document.getElementById('y').textContent=new Date().getFullYear()</script>
+</body>
+</html>
